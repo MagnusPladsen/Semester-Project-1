@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #118AB2;
+    --secondary-color: #EF476F;
+}
+
+footer {
+    background-color: var(--primary-color);
+}
+
+footer {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    color: white;
+    line-height: 10px;
+}
+
+footer div {
+    width: 80vw;
+    margin: 0 auto 40px;
+}
+
+footer img {
+    position: relative;
+    float: right;
+    top: 2px;
+}
+
+.footer-header {
+    text-decoration: underline white;
+}
+
+
+

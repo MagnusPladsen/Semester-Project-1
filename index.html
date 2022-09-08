@@ -23,19 +23,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="/images/icons/logo.svg">
+
     <!-- TITLE -->
     <title>Community Science Museum - Home</title>
 </head>
 <body>
     <nav>
-        <img src="./images/icons/logo.svg" alt="Logo icon" class="logo">
+        <img src="/images/icons/logo.svg" alt="Logo icon" class="logo">
 
         <!-- MOBILE NAVIGATION-->
         <div id="mobile-nav">
-            <img src="./images/icons/hamburger.svg" alt="Menu icon" class="menu">
             <div class="dropdown">
+                <input type="checkbox" id="checkbox_toggle">
+                <label for="checkbox_toggle"><img src="/images/icons/hamburger.svg" alt="Menu icon" class="menu"></label>
                 <ul>
-                    <a href="./index.html"><li class="nav-active">Home</li></a>
+                    <a href="/index.html"><li class="nav-active">Home</li></a>
                     <a href="./pages/explore.html"><li>Explore</li></a>
                     <a href="./pages/exhibitions.html"><li>Exhibitions</li></a>
                     <a href="./pages/getinvolved.html"><li>Get Involved</li></a>
@@ -54,7 +58,7 @@
         </div>
     </nav>
     <header>
-        <img src="./images/hero.jpeg" alt="Hero image of the Museum" class="hero">
+        <img src="/images/hero.jpeg" alt="Hero image of the Museum" class="hero">
         <div class="hero-text">
             <h1>Community Science Museum</h1>
             <h2>Come join us at the Community Science Museum where we’re committed to making science accessible to all.</h2>
@@ -65,15 +69,15 @@
         <section class="events">
             <h2>Special Events and News</h2>
             <div class="event first-event">
-                <img src="event-aeronautics.jpeg" alt="Aeronautics event image" class="content-image event-image">
+                <img src="/images/event-aeronautics.jpeg" alt="Aeronautics event image" class="content-image event-image">
                 <p class="event-text">Visiting Professor of Aeronautics</p>
             </div>
             <div class="event second-event">
-                <img src="event-night.jpeg" alt="Night at the museum event image" class="content-image event-image">
+                <img src="/images/event-night.jpeg" alt="Night at the museum event image" class="content-image event-image">
                 <p class="event-text">Night at the Museum</p>
             </div>
             <div class="event third-event">
-                <img src="event-energetica.jpeg" alt="Energetica event image" class="content-image event-image">
+                <img src="/images/event-energetica.jpeg" alt="Energetica event image" class="content-image event-image">
                 <p class="event-text">Energetica Exhibition on Loan</p>
             </div>
         </section>
@@ -81,30 +85,24 @@
     <footer>
         <section>
             <div class="location">
-                <p class="footer-header">Location</p>
-                <p>5 The Avenue</br>
-                London</br>
-                W43 OUN</p>
                 <img src="./images/icons/location.svg" alt="location icon" class="footer-icon">
+                <p class="footer-header">Location:</p>
+                <p>5 The Avenue</p>
+                <p>London</p>
+                <p>W43 OUN</p>
             </div>
             <div class="contact">
-                <p class="footer-header">Contact</p>
-                <p>
-                    Email: <a href="mailto: contact@csm.uk">contact@csm.uk</a></br>
-                    Phone: +44 077 0648 2642
-                </p>
                 <img src="./images/icons/contact.svg" alt="Contact icon" class="footer-icon">
+                <p class="footer-header">Contact:</p>
+                <p>Email: <a href="mailto: contact@csm.uk">contact@csm.uk</a></p>
+                <p>Phone: +44 077 0648 2642</p>
             </div>
             <div class="hours">
-                <p class="footer-header">Hours</p>
-                <p>
-                    Monday: Closed</br>
-                    Tuesday - Thursday: 10:00 – 16:00</br>
-                    Friday: 10:00 – 19:00</br>
-                    Saturday: 9:00 – 16:00</br>
-                    Sunday: 9:00 – 13:00
-                </p>
                 <img src="./images/icons/hours.svg" alt="Hours icon" class="footer-icon">
+                <p class="footer-header">Hours:</p>
+                <p>Weekdays: 10:00 – 19:00</p>
+                <p>Saturday: 9:00 – 16:00</p>
+                <p>Sunday: 9:00 – 13:00</p>
             </div>
         </section>
     </footer>

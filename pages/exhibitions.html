@@ -10,13 +10,13 @@
     <meta name="author" content="Magnus Pladsen">
 
     <!-- UNIVERSAL STYLES -->
-    <link type="text/css" rel="stylesheet" href="./css/universal.css">
+    <link type="text/css" rel="stylesheet" href="../css/universal.css">
     <!-- INDEX STYLES -->
-    <link type="text/css" rel="stylesheet" href="./css/exhibitions.css">
+    <link type="text/css" rel="stylesheet" href="../css/exhibitions.css">
     <!-- NAVIGATION STYLES -->
-    <link type="text/css" rel="stylesheet" href="./css/nav.css">
+    <link type="text/css" rel="stylesheet" href="../css/nav.css">
     <!-- FOOTER STYLES -->
-    <link type="text/css" rel="stylesheet" href="./css/footer.css">
+    <link type="text/css" rel="stylesheet" href="../css/footer.css">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,17 +28,18 @@
 </head>
 <body>
     <nav>
-        <img src="./images/icons/logo.svg" alt="Logo icon" class="logo">
+        <img src="/images/icons/logo.svg" alt="Logo icon" class="logo">
 
         <!-- MOBILE NAVIGATION-->
         <div id="mobile-nav">
-            <img src="./images/icons/hamburger.svg" alt="Menu icon" class="menu">
             <div class="dropdown">
+                <input type="checkbox" id="checkbox_toggle">
+                <label for="checkbox_toggle"><img src="/images/icons/hamburger.svg" alt="Menu icon" class="menu"></label>
                 <ul>
-                    <a href="./index.html"><li>Home</li></a>
-                    <a href="./explore.html"><li>Explore</li></a>
-                    <a href="./exhibitions.html"><li class="nav-active">Exhibitions</li></a>
-                    <a href="./getinvolved.html"><li>Get Involved</li></a>
+                    <a href="/index.html"><li>Home</li></a>
+                    <a href="/pages/explore.html"><li>Explore</li></a>
+                    <a href="/pages/exhibitions.html"><li class="nav-active">Exhibitions</li></a>
+                    <a href="/pages/getinvolved.html"><li>Get Involved</li></a>
                 </ul>
             </div>
         </div>
@@ -47,9 +48,9 @@
         <div id="desktop-nav">
             <ul>
                 <a href="./index.html"><li>Home</li></a>
-                <a href="./explore.html"><li>Explore</li></a>
-                <a href="./exhibitions.html"><li class="nav-active">Exhibitions</li></a>
-                <a href="./getinvolved.html"><li>Get Involved</li></a>
+                <a href="/pages/explore.html"><li>Explore</li></a>
+                <a href="/pages/exhibitions.html"><li class="nav-active">Exhibitions</li></a>
+                <a href="/pages/getinvolved.html"><li>Get Involved</li></a>
             </ul>
         </div>
     </nav>
@@ -105,30 +106,24 @@
     <footer>
         <section>
             <div class="location">
-                <p class="footer-header">Location</p>
-                <p>5 The Avenue</br>
-                London</br>
-                W43 OUN</p>
                 <img src="./images/icons/location.svg" alt="location icon" class="footer-icon">
+                <p class="footer-header">Location:</p>
+                <p>5 The Avenue</p>
+                <p>London</p>
+                <p>W43 OUN</p>
             </div>
             <div class="contact">
-                <p class="footer-header">Contact</p>
-                <p>
-                    Email: <a href="mailto: contact@csm.uk">contact@csm.uk</a></br>
-                    Phone: +44 077 0648 2642
-                </p>
                 <img src="./images/icons/contact.svg" alt="Contact icon" class="footer-icon">
+                <p class="footer-header">Contact:</p>
+                <p>Email: <a href="mailto: contact@csm.uk">contact@csm.uk</a></p>
+                <p>Phone: +44 077 0648 2642</p>
             </div>
             <div class="hours">
-                <p class="footer-header">Hours</p>
-                <p>
-                    Monday: Closed</br>
-                    Tuesday - Thursday: 10:00 – 16:00</br>
-                    Friday: 10:00 – 19:00</br>
-                    Saturday: 9:00 – 16:00</br>
-                    Sunday: 9:00 – 13:00
-                </p>
                 <img src="./images/icons/hours.svg" alt="Hours icon" class="footer-icon">
+                <p class="footer-header">Hours:</p>
+                <p>Weekdays: 10:00 – 19:00</p>
+                <p>Saturday: 9:00 – 16:00</p>
+                <p>Sunday: 9:00 – 13:00</p>
             </div>
         </section>
     </footer>
