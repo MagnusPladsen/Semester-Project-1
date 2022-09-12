@@ -3,7 +3,7 @@
     --secondary-color: #EF476F;
 }
 
-.hero {
+#hero {
     width: 390px;
 }
 
@@ -16,7 +16,6 @@ header {
 h1 {
     width: 90vw;
     margin: 40px auto 0;
-    
 }
 
 header h2 {
@@ -31,23 +30,19 @@ button {
     margin-bottom: 80px;
 }
 
-.events h2 {
+.event-header {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--primary-color);
     margin: 0;
 }
 
-.events {
+main {
     width: 80vw;
     margin: 80px auto 100px;
     text-align: center;
 }
 
-.event p {
-    /* font-weight: 900; */
-    font-family: "Nunito";
-}
 
 .content-image {
     width: 300px;
@@ -57,6 +52,48 @@ button {
 
 .events p {
     margin-top: 10px;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
+}
+
+
+
+
+
+@media screen and (min-device-width: 1200px)  {
+    header {
+        margin-top: -1px;
+    }
+    #hero {
+        height: 60vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    h1 {
+        margin: 50px auto 0;
+        font-size: 60px;
+    }
+    header h2 {
+        margin: 10px auto 0;
+        font-size: 1.5rem;
+        width: 60vw;
+    }
+    button {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .main {
+        width: 100%;
+        margin: 125px auto 125px;
+    }
+    .event-header {
+        font-size: 30px;
+        text-align: left;
+    }
+    .events {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 90px;
+        text-align: center;
+    }
 }

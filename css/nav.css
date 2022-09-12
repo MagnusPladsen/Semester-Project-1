@@ -21,6 +21,7 @@ nav {
     color: white;
     height: 60px;
     width: 100vw;
+    max-width:100%;
 }
 
 input[type=checkbox]{
@@ -89,14 +90,15 @@ input[type=checkbox]:checked ~ ul {
     }
     #desktop-nav ul {
         display: inline-flex;
-        gap: 50px;
+        justify-content: space-around;
         width: 40vw;
-        position: relative;
-        float: right;
+        position: absolute;
+        top: 4px;
+        right: 40px;
+        font-size: 1.25em;
     }
     nav {
         position: relative;
-        width: 100vw;
         height: 75px;
         top: 0px;
     }
@@ -106,11 +108,5 @@ input[type=checkbox]:checked ~ ul {
         height: 45px;
         left: 40px;
         top: 15px;
-    }
-    .hero {
-        height: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 }

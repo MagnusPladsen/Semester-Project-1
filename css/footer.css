@@ -31,3 +31,16 @@ footer img {
 
 
 
+
+@media screen and (min-device-width: 1200px)  {
+    footer section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    footer div {
+        max-width: 20vw;
+        margin: 0 auto 40px;
+    }
+}
+
+
