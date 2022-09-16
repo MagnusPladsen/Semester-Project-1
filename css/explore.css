@@ -94,10 +94,13 @@ article {
 
 
 @media screen and (min-device-width: 1200px)  {
+    article, .teacher-grid-container {
+        padding-bottom: 5vh;
+    }
     .for-kids-grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 80px;
+        gap: 5vw;
         height: auto;
     }
     .left-kids, .mid-kids, .right-kids {
@@ -113,7 +116,7 @@ article {
         height: auto;  /* DENNE MÅ FIKSES */
     }
     .for-kids p {
-        height: 120px;
+        height: 100px;
     }
     .teacher-grid-container {
         display: grid;
@@ -125,13 +128,12 @@ article {
         margin-top: 25px;
         padding-bottom: 100px;
         grid-auto-rows: auto;
-        column-gap: 20px;
+        column-gap: 5vw;
     }
     .cta-contact {
         margin-top: 0px;
         margin-bottom: 20px;
     }
-    
     .left-image {
         grid-area: left;
     }
@@ -173,7 +175,7 @@ article {
         margin-top: 0px;
     }
     .researchers p {
-        height: 100px;
+        height: 80px;
     }
     .researchers img {
         margin-top: 20px;
