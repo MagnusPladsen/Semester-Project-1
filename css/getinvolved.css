@@ -50,22 +50,20 @@ article {
 }
 
 .icons {
-    height: 125px;
-    width: 125px;
-    margin: 50px 0;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
+  height: 125px;
+  width: 125px;
+  margin: 50px 0;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .cta-contact {
-    margin: 50px 0;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
+  margin: 50px 0;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
-
-
 
 @media screen and (min-device-width: 1200px) {
   article {
@@ -73,6 +71,26 @@ article {
   }
   .blue-content {
     margin: 0px auto;
+  }
+  .getinvolved-grid-container {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 0;
+    height: auto;
+  }
+  article {
+    width: 25vw;
+  }
+  .text-container {
+    height: 60vh;
+  }
+  .cta-contact {
+    position: relative;
+    top: 20vh;  /* WTF A ER BROKEN, MÅ FIKSE PLASSERIGN */
   }
 }
 
