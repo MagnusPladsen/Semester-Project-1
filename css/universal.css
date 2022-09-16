@@ -40,5 +40,9 @@ h1 {
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+    z-index: 10;
 }
 
+button:hover {
+    cursor: pointer;
+}

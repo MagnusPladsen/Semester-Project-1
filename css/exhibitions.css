@@ -1,0 +1,68 @@
+
+.title span {
+    display: inline-block;
+}
+  
+.title span::after
+{
+    margin-top: 5px;
+    content: '';
+    height: 5px;
+    background: var(--secondary-color);
+    border-radius: 5px;
+    display: block
+}
+
+.title {
+    color: var(--primary-color);
+}
+
+header, article {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 50px;
+}
+
+main h2 {
+    color: var(--primary-color);
+    width: 80vw;
+    margin: 50px auto 0 auto;
+}
+
+main p {
+    font-weight: 600;
+}
+
+article section {
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.content-image {
+    width: 300px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+}
+
+.evolution, .robotics-ai {
+    background-color: var(--primary-color);
+    width: 100%;
+    color: white;
+    padding-top: 30px;
+    margin-bottom: 80px;
+}
+
+.blue-content {
+    width: 80vw;
+    margin: 50px auto;
+    z-index: 10;
+}
+
+.blue-content h2 {
+    color: white;
+}

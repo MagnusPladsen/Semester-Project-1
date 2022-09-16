@@ -62,7 +62,7 @@ article {
     margin-bottom: 100px;
 }
 
-.for-teachers h2 {
+.blue-content h2 {
     color: white;
 }
 
@@ -190,5 +190,8 @@ article {
     }
     .left-r, .right-r {
         height: auto;
+    }
+    .blue-content {
+        margin: 0px auto;
     }
 }
