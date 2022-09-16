@@ -45,7 +45,8 @@ article section {
     width: 300px;
     height: 200px;
     margin-top: 50px;
-    margin-bottom: 50px; /* DISSE MÅ MIDSTILLES FØR LEVERING */
+    margin-bottom: 50px;
+    border-radius: 4px;
 }
 
 
@@ -57,7 +58,7 @@ article section {
     margin-bottom: 80px;
 }
 
-.section-end {
+article {
     margin-bottom: 100px;
 }
 
@@ -74,6 +75,7 @@ article section {
 .teacher-image {
     width: 300px;
     height: 420px;
+    border-radius: 4px;
 }
 
 .cta-contact {
@@ -92,20 +94,23 @@ article section {
 
 
 @media screen and (min-device-width: 1200px)  {
-    .for-kids {
+    .for-kids-grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 80px;
+        height: auto;
     }
-    article section {
-        margin-top: 25px;
-        margin-bottom: 0;
-        height: 400px;
+    .left-kids, .mid-kids, .right-kids {
+        height: auto;  
     }
     .content-image {
         position: relative;
         left: 50%;
         transform: translate(-50%);
+        object-fit: cover;
+        width: 100%;
+        margin: 0px;
+        height: auto;  /* DENNE MÅ FIKSES */
     }
     .for-kids p {
         height: 120px;
@@ -117,7 +122,16 @@ article section {
         "left mid-2 right"
         "left mid-3 right"
         "left mid-4 right";
+        margin-top: 25px;
+        padding-bottom: 100px;
+        grid-auto-rows: auto;
+        column-gap: 20px;
     }
+    .cta-contact {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    
     .left-image {
         grid-area: left;
     }
@@ -141,54 +155,38 @@ article section {
         width: 25vw;
         margin: 12px auto;
         position: relative;
-        bottom: -40px;
     }
     .teacher-image {
-        margin: 50px auto !important;
+        margin: 0px auto !important;
+        width: 100%;
+        object-fit: cover;
     }
-    .researchers {
+    .researchers-grid-container {
         margin-top: 25px;
         display: grid;
         grid-template-areas: 
-        "left mid right";
-        gap: 100px;
-        height: 100%;
+        "1fr 1fr";
+        gap: 20vw;
+        grid-auto-rows: auto;
     }
     .researchers section, p {
         margin-top: 0px;
     }
     .researchers p {
-        height: 80px;
+        height: 100px;
     }
-    .left-r {
-        grid-area: left;
-    }
-    .right-r {
-        grid-area: right;
+    .researchers img {
+        margin-top: 20px;
     }
     #filler-image {
         display: block;
         border-radius: 4px;
-        grid-area: mid;
-        height: 350px;
-        width: 225px;
-    }
-}
-
-@media screen and (min-device-width: 1600px)  {
-    .content-image {
-        width: 100%;  /* FIX THE OVERFLOW */
-        height: 70%;
-    }
-    #filler-image {
-        height: 100%; /* FIX THE OVERFLOW */
-        width: 100%;
-    }
-    .teacher-image {
-        width: 100%; /* FIX THE OVERFLOW */
         height: 100%;
+        width: 100%;
+        object-fit: cover;
+        margin-top: 0px;
     }
-    .for-kids, .researchers {
-        gap: 160px;
+    .left-r, .right-r {
+        height: auto;
     }
 }
