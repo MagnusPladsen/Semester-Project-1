@@ -1,107 +1,101 @@
-
 #desktop-nav {
-    display: none;
+  display: none;
 }
 
 #mobile-nav {
-    display: flex;
+  display: flex;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 nav {
-    background-color: var(--primary-color);
-    color: white;
-    height: 60px;
-    width: 100vw;
-    max-width:100%;
+  background-color: var(--primary-color);
+  color: white;
+  height: 60px;
+  width: 100vw;
+  max-width: 100%;
 }
 
-input[type=checkbox]{
-    visibility: hidden;
-    height: 60px;
-    width: 60px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 10;
+input[type="checkbox"] {
+  visibility: hidden;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
 }
 
-input[type=checkbox]:checked ~ ul {
-    display: block;
+input[type="checkbox"]:checked ~ ul {
+  display: block;
 }
 
 .dropdown ul {
-    display: none;
-    background-color: var(--primary-color);
-    height: 300px;
-    width: 100vw;
-    position: relative;
-    top: 43px;
-    text-align: center;
-    padding: 0;
+  display: none;
+  background-color: var(--primary-color);
+  height: 300px;
+  width: 100vw;
+  position: relative;
+  top: 43px;
+  text-align: center;
+  padding: 0;
 }
 
 #mobile-nav li {
-    padding-top: 17px;
-    padding-bottom: 17px;
-    font-size: 1.25rem;
-    margin-bottom: 10px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
 }
 
 .nav-active {
-    text-decoration: underline var(--secondary-color) 2px;
-    text-underline-offset: 5px;
+  text-decoration: underline var(--secondary-color) 2px;
+  text-underline-offset: 5px;
 }
 
-
 .logo {
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    top: 12px;
-    left: 14px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 12px;
+  left: 14px;
 }
 
 .menu {
-    width: 35px;
-    position: absolute;
-    top: 16px;
-    right: 14px;
+  width: 35px;
+  position: absolute;
+  top: 16px;
+  right: 14px;
 }
 
-
-
-
-
-@media screen and (min-device-width: 1200px)  {
-    #mobile-nav {
-        display: none;
-    }
-    #desktop-nav {
-        display: block;
-    }
-    #desktop-nav ul {
-        display: inline-flex;
-        justify-content: space-around;
-        width: 40vw;
-        position: absolute;
-        top: 4px;
-        right: 40px;
-        font-size: 1.25em;
-    }
-    nav {
-        position: relative;
-        height: 75px;
-        top: 0px;
-    }
-    .logo {
-        position: relative;
-        width: 45px;
-        height: 45px;
-        left: 40px;
-        top: 15px;
-    }
+@media screen and (min-device-width: 1200px) {
+  #mobile-nav {
+    display: none;
+  }
+  #desktop-nav {
+    display: block;
+  }
+  #desktop-nav ul {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 40vw;
+    position: absolute;
+    top: 4px;
+    right: 40px;
+    font-size: 1.25em;
+  }
+  nav {
+    position: relative;
+    height: 75px;
+    top: 0px;
+  }
+  .logo {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    left: 40px;
+    top: 15px;
+  }
 }

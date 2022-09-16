@@ -1,203 +1,195 @@
-
 .title span {
-    display: inline-block;
+  display: inline-block;
 }
-  
-.title span::after
-{
-    margin-top: 5px;
-    content: '';
-    height: 5px;
-    background: var(--secondary-color);
-    border-radius: 5px;
-    display: block
+
+.title span::after {
+  margin-top: 5px;
+  content: "";
+  height: 5px;
+  background: var(--secondary-color);
+  border-radius: 5px;
+  display: block;
 }
 
 .title {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
-header, article {
-    width: 80vw;
-    margin: 0 auto;
+header,
+article {
+  width: 80vw;
+  margin: 0 auto;
 }
 
 header {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 main h2 {
-    color: var(--primary-color);
-    width: 80vw;
-    margin: 50px auto 0 auto;
+  color: var(--primary-color);
+  width: 80vw;
+  margin: 50px auto 0 auto;
 }
 
 main p {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 article section {
-    margin-top: 25px;
-    margin-bottom: 0;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
 .content-image {
-    width: 300px;
-    height: 200px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 4px;
+  width: 300px;
+  height: 200px;
+  margin-top: 16px;
+  margin-bottom: 50px;
+  border-radius: 4px;
 }
 
-
 .for-teachers {
-    background-color: var(--primary-color);
-    width: 100%;
-    color: white;
-    padding-top: 30px;
-    margin-bottom: 80px;
+  background-color: var(--primary-color);
+  width: 100%;
+  color: white;
+  padding-top: 30px;
+  margin-bottom: 80px;
 }
 
 article {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .blue-content h2 {
-    color: white;
+  color: white;
 }
 
 .blue-content {
-    width: 80vw;
-    margin: 50px auto;
-    z-index: 10;
+  width: 80vw;
+  margin: 50px auto;
+  z-index: 10;
 }
 
 .teacher-image {
-    width: 300px;
-    height: 420px;
-    border-radius: 4px;
+  width: 300px;
+  height: 420px;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  margin-top: 16px;
 }
 
 .cta-contact {
-    margin-top: 50px;
-    margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media screen and (min-device-width: 1200px) {
+  article,
+  .teacher-grid-container {
+    padding-bottom: 5vh;
+  }
+  .for-kids-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5vw;
+    height: auto;
+  }
+  .left-kids,
+  .mid-kids,
+  .right-kids {
+    height: auto;
+  }
+  .content-image {
     position: relative;
     left: 50%;
     transform: translate(-50%);
+    object-fit: cover;
+    width: 100%;
+    margin: 0px;
+    height: auto; /* DENNE MÅ FIKSES */
+  }
+  .for-kids p {
+    height: 15vh;
+  }
+  .teacher-grid-container {
+    display: grid;
+    grid-template-areas:
+      "left mid-1 right"
+      "left mid-2 right"
+      "left mid-3 right"
+      "left mid-4 right";
+    margin-top: 25px;
+    padding-bottom: 100px;
+    grid-auto-rows: auto;
+    column-gap: 5vw;
+  }
+  .cta-contact {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .left-image {
+    grid-area: left;
+  }
+  .right-image {
+    grid-area: right;
+  }
+  .mid-text-1 {
+    grid-area: mid-1;
+  }
+  .mid-text-2 {
+    grid-area: mid-2;
+  }
+  .mid-text-3 {
+    grid-area: mid-3;
+  }
+  .mid-text-4 {
+    grid-area: mid-4;
+    bottom: -20px !important;
+  }
+  .mid-text {
+    width: 25vw;
+    margin: 12px auto;
+    position: relative;
+  }
+  .teacher-image {
+    margin: 0px auto !important;
+    width: 100%;
+    object-fit: cover;
+  }
+  .researchers-grid-container {
+    margin-top: 25px;
+    display: grid;
+    grid-template-areas: "1fr 1fr";
+    gap: 20vw;
+    grid-auto-rows: auto;
+  }
+  .researchers section,
+  p {
+    margin-top: 0px;
+  }
+  .researchers p {
+    height: 10vh;
+  }
+  .researchers img {
+    margin-top: 20px;
+  }
+  .left-r,
+  .right-r {
+    height: auto;
+  }
+  .blue-content {
+    margin: 0px auto;
+  }
 }
 
-#filler-image {
-    display: none;
-}
-
-
-
-
-@media screen and (min-device-width: 1200px)  {
-    article, .teacher-grid-container {
-        padding-bottom: 5vh;
-    }
-    .for-kids-grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 5vw;
-        height: auto;
-    }
-    .left-kids, .mid-kids, .right-kids {
-        height: auto;  
-    }
-    .content-image {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-        object-fit: cover;
-        width: 100%;
-        margin: 0px;
-        height: auto;  /* DENNE MÅ FIKSES */
-    }
-    .for-kids p {
-        height: 100px;
-    }
-    .teacher-grid-container {
-        display: grid;
-        grid-template-areas: 
-        "left mid-1 right"
-        "left mid-2 right"
-        "left mid-3 right"
-        "left mid-4 right";
-        margin-top: 25px;
-        padding-bottom: 100px;
-        grid-auto-rows: auto;
-        column-gap: 5vw;
-    }
-    .cta-contact {
-        margin-top: 0px;
-        margin-bottom: 20px;
-    }
-    .left-image {
-        grid-area: left;
-    }
-    .right-image {
-        grid-area: right;
-    }
-    .mid-text-1 {
-        grid-area: mid-1;
-    }
-    .mid-text-2 {
-        grid-area: mid-2;
-    }
-    .mid-text-3 {
-        grid-area: mid-3;
-    }
-    .mid-text-4 {
-        grid-area: mid-4;
-        bottom: -20px !important;
-    }
-    .mid-text {
-        width: 25vw;
-        margin: 12px auto;
-        position: relative;
-    }
-    .teacher-image {
-        margin: 0px auto !important;
-        width: 100%;
-        object-fit: cover;
-    }
-    .researchers-grid-container {
-        margin-top: 25px;
-        display: grid;
-        grid-template-areas: 
-        "1fr 1fr";
-        gap: 20vw;
-        grid-auto-rows: auto;
-    }
-    .researchers section, p {
-        margin-top: 0px;
-    }
-    .researchers p {
-        height: 80px;
-    }
-    .researchers img {
-        margin-top: 20px;
-    }
-    #filler-image {
-        display: block;
-        border-radius: 4px;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        margin-top: 0px;
-    }
-    .left-r, .right-r {
-        height: auto;
-    }
-    .blue-content {
-        margin: 0px auto;
-    }
-}
-
-@media screen and (min-device-width: 1600px)  {
-    header, article, main h2, .blue-content {
-        width: 70vw;
-    }
+@media screen and (min-device-width: 1600px) {
+  header,
+  article,
+  main h2,
+  .blue-content {
+    width: 70vw;
+  }
 }

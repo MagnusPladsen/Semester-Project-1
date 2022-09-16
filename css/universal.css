@@ -1,48 +1,57 @@
 :root {
-    --primary-color: #118AB2;
-    --secondary-color: #EF476F;
+  --primary-color: #118ab2;
+  --secondary-color: #ef476f;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: "Nunito";
+  margin: 0;
+  font-family: "Nunito";
 }
 
 button {
-    width: 200px;
-    height: 60px;
-    border-radius: 4px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
-    background-color: var(--secondary-color);
-    color: white;
-    font-family: "Nunito";
-    font-size: 1.25rem;
-    border: none;
+  width: 200px;
+  height: 60px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--secondary-color);
+  color: white;
+  font-family: "Nunito";
+  font-size: 1.25rem;
+  border: none;
 }
 
 button.unstyled {
-    unset: all;
+  unset: all;
 }
 
-h1, h2, h3 {
-    font-family: "Roboto";
+h1,
+h2,
+h3 {
+  font-family: "Roboto";
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: 900;
+  font-size: 2.5rem;
+  font-weight: 900;
 }
 
-a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-    z-index: 10;
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  z-index: 10;
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: underline;
 }
