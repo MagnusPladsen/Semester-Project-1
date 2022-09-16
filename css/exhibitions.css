@@ -61,8 +61,49 @@ article section {
     width: 80vw;
     margin: 50px auto;
     z-index: 10;
+    padding-bottom: 50px;
 }
 
 .blue-content h2 {
     color: white;
+}
+
+
+@media screen and (min-device-width: 1200px)  {
+    article {
+        padding-bottom: 5vh; /* SJEKK OPP DENNE */
+    }
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5vw;
+        height: auto;
+    }
+    section p {
+        height: 10vh;
+    }
+    .left-kids, .mid-kids, .right-kids {
+        height: auto;  
+    }
+    .content-image {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        object-fit: cover;
+        width: 100%;
+        margin: 0px;
+        height: auto;  /* DENNE MÅ FIKSES */
+    }
+
+}
+
+
+
+
+
+
+@media screen and (min-device-width: 1600px)  {
+    header, article, main h2, .blue-content {
+        width: 70vw;
+    }
 }

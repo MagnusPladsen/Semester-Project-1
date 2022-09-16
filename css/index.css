@@ -108,4 +108,7 @@ main {
     .events {
         gap: 200px;
     }
+    main, main h2 {
+        width: 70vw;
+    }
 }
