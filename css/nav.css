@@ -1,3 +1,9 @@
+/* ---------------------------------------
+---------------- NAV STYLES -------------- */
+
+
+
+/* ---- DISPLAY NAV ---- */
 #desktop-nav {
   display: none;
 }
@@ -6,9 +12,9 @@
   display: flex;
 }
 
-ul {
-  list-style-type: none;
-}
+
+
+/* ---- MAIN NAV ---- */
 
 nav {
   background-color: var(--primary-color);
@@ -17,6 +23,27 @@ nav {
   width: 100vw;
   max-width: 100%;
 }
+
+ul {
+  list-style-type: none;
+}
+
+.nav-active {
+  text-decoration: underline var(--secondary-color) 2px;
+  text-underline-offset: 5px;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 12px;
+  left: 14px;
+}
+
+
+
+/* ---- DROPDOWN ---- */
 
 input[type="checkbox"] {
   visibility: hidden;
@@ -50,19 +77,6 @@ input[type="checkbox"]:checked ~ ul {
   margin-bottom: 10px;
 }
 
-.nav-active {
-  text-decoration: underline var(--secondary-color) 2px;
-  text-underline-offset: 5px;
-}
-
-.logo {
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  top: 12px;
-  left: 14px;
-}
-
 .menu {
   width: 35px;
   position: absolute;
@@ -70,13 +84,19 @@ input[type="checkbox"]:checked ~ ul {
   right: 14px;
 }
 
+
+
+/* ---- MEDIA DESKTOP SMALL < ---- */
+
 @media screen and (min-device-width: 1200px) {
   #mobile-nav {
     display: none;
   }
+
   #desktop-nav {
     display: block;
   }
+
   #desktop-nav ul {
     display: inline-flex;
     justify-content: space-around;
@@ -86,11 +106,13 @@ input[type="checkbox"]:checked ~ ul {
     right: 40px;
     font-size: 1.25em;
   }
+
   nav {
     position: relative;
     height: 75px;
     top: 0px;
   }
+  
   .logo {
     position: relative;
     width: 45px;

@@ -1,51 +1,14 @@
-.title span {
-  display: inline-block;
-}
+/* ---------------------------------------
+---------- EXHIBITIONS STYLES ------------ */
 
-.title span::after {
-  margin-top: 5px;
-  content: "";
-  height: 5px;
-  background: var(--secondary-color);
-  border-radius: 5px;
-  display: block;
-}
 
-.title {
-  color: var(--primary-color);
-}
 
-header,
-article {
-  width: 80vw;
-  margin: 0 auto;
-}
+/* ---- ARTICLE ---- */
 
-header {
-  margin-top: 50px;
-}
-
-main h2 {
-  color: var(--primary-color);
-  width: 80vw;
-  margin: 50px auto 0 auto;
-}
-
-main p {
-  font-weight: 600;
-}
-
-article section {
-  margin-top: 25px;
-  margin-bottom: 0;
-}
-
-.content-image {
-  width: 300px;
-  height: 200px;
-  margin-top: 16px;
-  margin-bottom: 50px;
-  border-radius: 4px;
+.cosmology,
+.biology-medicine,
+.ecology {
+  padding-bottom: 10vh;
 }
 
 .evolution,
@@ -54,8 +17,13 @@ article section {
   width: 100%;
   color: white;
   padding-top: 30px;
-  margin-bottom: 80px;
+  margin-bottom: 8px;
+  padding-bottom: 3vh;
 }
+
+
+
+/* ---- BLUE-CONTENT ---- */
 
 .blue-content {
   width: 80vw;
@@ -68,25 +36,35 @@ article section {
   color: white;
 }
 
-@media only screen and (min-width: 768px) {
+
+/* ---- MEDIA TABLET ---- */
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
   header,
   article,
   main h2,
   .blue-content {
     width: 60vw;
   }
+
   .content-image {
     width: 100%;
     height: 100%;
   }
+
   article {
     padding-bottom: 10vh;
   }
+
   .blue-content {
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
 }
+
+
+
+/* ---- MEDIA DESKTOP SMALL < ---- */
 
 @media screen and (min-device-width: 1200px) {
   header,
@@ -95,9 +73,18 @@ article section {
   .blue-content {
     width: 80vw;
   }
-  article {
-    padding-bottom: 5vh;
+
+  .cosmology,
+  .biology-medicine,
+  .ecology {
+    padding-bottom: 15vh;
   }
+
+  .evolution,
+  .robotics-ai {
+    padding-bottom: 1vh;
+  }
+
   section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -105,14 +92,21 @@ article section {
     height: auto;
     margin-bottom: 50px !important;
   }
+
   main p {
     height: 12vh;
   }
+
+  main h2 {
+    margin-top: 15vh;
+  }
+
   .left-kids,
   .mid-kids,
   .right-kids {
     height: auto;
   }
+
   .content-image {
     position: relative;
     left: 50%;
@@ -120,9 +114,13 @@ article section {
     object-fit: cover;
     width: 100%;
     margin: 0px;
-    height: 70%; /* DENNE MÅ FIKSES */
+    height: 70%;
   }
 }
+
+
+
+/* ---- MEDIA DESKTOP LARGE < ---- */
 
 @media screen and (min-device-width: 1600px) {
   header,
@@ -131,7 +129,23 @@ article section {
   .blue-content {
     width: 70vw;
   }
+
   main p {
     height: 7vh;
+  }
+
+  .cosmology,
+  .biology-medicine,
+  .ecology {
+    padding-bottom: 10vh;
+  }
+
+  .evolution,
+  .robotics-ai {
+    padding-bottom: 5vh;
+  }
+  
+  main h2 {
+    margin-top: 10vh;
   }
 }

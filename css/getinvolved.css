@@ -1,52 +1,12 @@
-.title span {
-  display: inline-block;
-}
+/* ---------------------------------------
+---------- GET-INVOLVED STYLES ----------- */
 
-.title span::after {
-  margin-top: 5px;
-  content: "";
-  height: 5px;
-  background: var(--secondary-color);
-  border-radius: 5px;
-  display: block;
-}
 
-.title {
-  color: var(--primary-color);
-}
 
-header,
-article {
-  width: 80vw;
-  margin: 0 auto;
-}
-
-header {
-  margin-top: 50px;
-}
-
-main h2 {
-  color: var(--primary-color);
-  width: 80vw;
-  margin: 50px auto 0 auto;
-}
-
-main p {
-  font-weight: 600;
-}
+/* ---- ARTICLE ---- */
 
 article {
   margin-bottom: 100px;
-}
-
-.blue-content h2 {
-  color: white;
-}
-
-.blue-content {
-  width: 80vw;
-  margin: 50px auto;
-  z-index: 10;
 }
 
 .icons {
@@ -65,13 +25,51 @@ article {
   transform: translate(-50%);
 }
 
-@media screen and (min-device-width: 1200px) {
-  article {
-    padding-bottom: 5vh;
+
+
+/* ---- BLUE-CONTENT ---- */
+
+.blue-content {
+  width: 80vw;
+  margin: 50px auto;
+  z-index: 10;
+}
+
+.blue-content h2 {
+  color: white;
+}
+
+
+
+/* ---- MEDIA TABLET ---- */
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .content-image {
+    width: 100%;
+    height: 100%;
   }
+
+  .blue-content {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .teacher-image {
+    margin: 16px auto 50px !important;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+
+/* ---- MEDIA DESKTOP SMALL < ---- */
+
+@media screen and (min-device-width: 1200px) {
   .blue-content {
     margin: 0px auto;
   }
+
   .getinvolved-grid-container {
     width: 80vw;
     display: grid;
@@ -82,23 +80,28 @@ article {
     gap: 0;
     height: auto;
   }
+
   article {
     width: 25vw;
   }
+
   .text-container {
-    height: 60vh;
+    height: 55vh;
   }
+
   .cta-contact {
+    margin: 0 0;
     position: relative;
-    top: 20vh;  /* WTF A ER BROKEN, MÅ FIKSE PLASSERIGN */
+    top: 85px;
   }
 }
 
+
+
+/* ---- MEDIA DESKTOP LARGE < ---- */
+
 @media screen and (min-device-width: 1600px) {
-  header,
-  article,
-  main h2,
-  .blue-content {
-    width: 70vw;
+  .text-container {
+    height: 35vh;
   }
 }
