@@ -146,7 +146,7 @@ article {
   .mid-text-3 { grid-area: mid-3; }
   .mid-text-4 {
     grid-area: mid-4;
-    bottom: -20px !important;
+    bottom: -40px !important;
   }
 
   .mid-text {
@@ -201,6 +201,57 @@ article {
   article,
   main h2,
   .blue-content {
-    width: 70vw;
+    /* width: 70vw; */
+    width: 80vw;
+  }
+  .researchers p {
+    /* height: 5vh; */
+  }
+  .for-kids p {
+    /* height: 9vh; */
+  }
+  .for-teachers {
+    padding: 0;
+    height: 100vh;
+    font-size: 20px;
+    margin-bottom: 10vh!important;
+  }
+  .blue-content {
+    padding-top: 2vh;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+  h2 {
+    font-size: 2.5rem;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+  }
+  .teacher-grid-container {
+    height: 70vh;
+  }
+  .teacher-image {
+    height: 100%;
+  }
+  .cta-contact {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .mid-text-4 {
+    bottom: -60px !important;
+  }
+  .for-kids, .researchers {
+    padding: 0;
+    height: 60vh;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  .for-kids p {
+    height: 11vh;
+  }
+  .researchers p {
+    height: 7vh;
   }
 }
