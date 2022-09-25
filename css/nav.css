@@ -142,7 +142,7 @@ input[type="checkbox"]:checked ~ ul {
 
   nav h2 {
     position: absolute;
-    top: 5px;
+    top: 5px!important;
     left: 10vw;
     font-size: 1.25em;
   }
