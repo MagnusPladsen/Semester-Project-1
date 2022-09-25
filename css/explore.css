@@ -204,4 +204,12 @@ article {
   .blue-content {
     width: 70vw;
   }
+
+  .for-kids p {
+    height: 9vh;
+  }
+
+  .researchers p {
+    height: 5vh;
+  }
 }

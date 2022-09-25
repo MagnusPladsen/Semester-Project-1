@@ -46,6 +46,9 @@ li {
   left: 14px;
 }
 
+nav h2 {
+  display: none;
+}
 
 
 /* ---- DROPDOWN ---- */
@@ -124,5 +127,24 @@ input[type="checkbox"]:checked ~ ul {
     height: 45px;
     left: 40px;
     top: 15px;
+  }
+
+  nav h2 {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 10vw;
+    font-weight: 500;
+  }
+}
+
+
+
+/* ---- MEDIA DESKTOP LARGE < ---- */
+
+@media screen and (min-device-width: 1600px) {
+  nav h2 {
+    left: 125px;
   }
 }
