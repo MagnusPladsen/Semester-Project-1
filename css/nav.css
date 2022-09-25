@@ -46,9 +46,20 @@ li {
   left: 14px;
 }
 
-nav h2 {
-  display: none;
+.nav-header-container {
+  width: 100vw;
+  position: absolute;
+  top: 20px;
 }
+
+nav h2 {
+  color: white;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1em;
+  white-space: nowrap;
+}
+
 
 
 /* ---- DROPDOWN ---- */
@@ -130,12 +141,10 @@ input[type="checkbox"]:checked ~ ul {
   }
 
   nav h2 {
-    display: block;
-    color: white;
     position: absolute;
     top: 5px;
     left: 10vw;
-    font-weight: 500;
+    font-size: 1.25em;
   }
 }
 
