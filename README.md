@@ -12,8 +12,6 @@ We were only allowed to use HTML, CSS and vanilla JS.
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
 - HTML
 - CSS
 - JS
