@@ -8,13 +8,12 @@ This is for the first semester project on my school.
 
 This is a homepage belonging to a fake museum.
 
-We were only allowed to use HTML, CSS and vanilla JS.
+We were only allowed to use HTML and CSS.
 
 ## Built With
 
 - HTML
 - CSS
-- JS
 
 ## Getting Started
 
